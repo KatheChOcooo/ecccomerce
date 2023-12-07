@@ -1,249 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-            crossorigin="anonymous"
-        >
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        >
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
-            * {
-                font-family: 'Raleway', sans-serif;
-            }
-            ::-webkit-scrollbar {
-                display: none;
-            }
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-    </head>
-    <body class="bg-dark">
-        <div style="min-height: 100vh;">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img style="width: 70px;" src="https://wallpapers.com/images/featured/jordan-logo-wy5n6mg094axmhwk.webp" alt="jordan logo">
-                        <img style="width: 60px;" src="https://www.edigitalagency.com.au/wp-content/uploads/Nike-logo-png-white.png" alt="nike logo">
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-md-5">
-                            <li class="nav-item">
-                                <a
-                                    style="letter-spacing: 5px; font-size: 12px;"
-                                    class="nav-link fw-bold fw-bold active"
-                                    aria-current="page"
-                                    href="homepage.html"
-                                >HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="letter-spacing: 5px; font-size: 12px;" class="nav-link fw-bold fw-bold" href="#">MAN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="letter-spacing: 5px; font-size: 12px;" class="nav-link fw-bold fw-bold" href="#">WOMAN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="letter-spacing: 5px; font-size: 12px;" class="nav-link fw-bold fw-bold" href="#">KIDS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="letter-spacing: 5px; font-size: 12px;" class="nav-link fw-bold fw-bold" href="#">SALE</a>
-                            </li>
-                        </ul>
-                        <!-- <div class="d-flex align-items-center justify-content-end gap-md-2">
-                            <button class="btn btn-dark">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                            <button class="btn btn-dark">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button class="btn btn-dark">
-                                <i class="fa-solid fa-user"></i>
-                            </button>
-                        </div> -->
-                        <div class="d-flex align-items-center justify-content-start gap-md-4">
-                            <a class="nav-link me-2 text-light" href="#">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a class="nav-link me-2 text-light" href="cart.html">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                            <div class="btn-group">
-                                <a
-                                    href="#"
-                                    class="nav-link text-light me-2 dropdown-toggle"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    <i class="fa-solid fa-user"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                    <li>
-                                        <a class="dropdown-item fs-5 fw-bold" href="#">Katherine Grace</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="info.html">
-                                            <i class="me-3 text-muted fas fa-user"></i>
-                                            Personal info
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="security.html">
-                                            <i class="me-3 text-muted fas fa-lock"></i>
-                                            Login and security
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="payments.html">
-                                            <i class="me-3 text-muted fa-regular fa-credit-card"></i>
-                                            My payments
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <a class="dropdown-item" href="javascript:void(0)">
-                                            <i class="me-3 text-muted fa-regular fa-lightbulb"></i>
-                                            Dark theme
-                                        </a>
-                                        <div class="form-check form-switch">
-                                            <input
-                                                class="form-check-input"
-                                                type="checkbox"
-                                                role="switch"
-                                                id="darkmode"
-                                                disabled
-                                            >
-                                            <script>
-                                                let darkmode = document.querySelector('#darkmode')
-                                                let navbar = document.querySelector('.navbar')
-                                                let body = document.body
-                                                darkmode.addEventListener('change', () => {
-                                                    body.classList.toggle('bg-dark')
-                                                    body.classList.toggle('text-white')
-                                                    navbar.classList.toggle('bg-dark')
-                                                    navbar.classList.toggle('navbar-dark')
-                                                    
-                                                })
-                                            </script>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="login.html">
-                                            <i class="me-3 text-muted fa-solid fa-arrow-right-from-bracket"></i>
-                                            Log Out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeMate</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section>
+        <nav>
+            <div class="logo">
+                <h1>Shoe<span>Mate</span></h1>
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="C:\Users\ACER\OneDrive\Desktop\SHOEMATES\index.html\Index.html\barter\sheo_website-master\barter.html">Discover</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+        </nav>
+
+        <div class="main" id="Home">
+            <div class="main_content">
+                <div class="main_text">
+                    <h1>ShoeMates<br><span>Collection</span></h1>
+                    <p>
+                        Each pair tells a story, a tale of where we've been, where we're going, 
+                        and the paths we've chosen to tread
+                    </p>
                 </div>
-            </nav>
-            <section class="container d-block d-md-flex align-items-center justify-content-between" style="min-height: 80vh;">
-                <div class="position-relative d-none d-md-block">
-                    <span style="font-size: 13rem; font-weight: 900;" class="text-danger">Jump</span>
-                    <p style="position: absolute; bottom:5%; left: 50%; transform: translateX(-50%);" class="text-light fs-2 fw-bold d-block">Basketball shoes</p>
+                <div class="main_image">
+                    <img src="hys.png">
                 </div>
-                <div class="position-relative d-none d-md-block">
-                    <span style="font-size: 13rem; font-weight: 900;" class="text-light position-relative">
-                        man
-                    </span>
-                    <span style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%);" class="text-danger fs-1 fw-bold">2021 PF</span>
-                </div>
-                <img
-                    src="images/nike.png"
-                    alt=""
-                    class="position-absolute"
-                    style="left: 50%; transform: translateX(-50%);"
-                >
-                <div class="dropdown position-absolute" style="left: 50%; transform: translateX(-20%); top: 70%;">
-                    <button
-                        class="btn btn-dark dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <h4 class="text-danger fw-bold d-inline">134$</h4>
-                    </button>
-                    <ul class="dropdown-menu bg-dark">
-                        <li>
-                            <a class="dropdown-item text-white" href="#">
-                                <h4 class="text-danger fw-bold">134$</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item text-white" href="#">
-                                <h4 class="text-danger fw-bold">8,129.165PHP</h4>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="d-md-flex d-block" style="margin-top: -10rem;">
-                <div class="col-12 col-md-4 p-3 mx-auto">
-                    <small class="text-white">CHOOSE COLOR:</small>
-                    <div class="d-flex align-items-center justify-content-start gap-0 mt-5">
-                        <img src="images/nike.png" alt="" style="width: 100px;">
-                        <img src="images/nike.png" alt="" style="width: 100px;">
-                        <img src="images/nike.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 p-3 mx-auto d-flex align-items-center justify-content-center gap-4">
-                    <button class="btn fs-6 px-4 fw-bold btn-light rounded-0">ADD TO CART</button>
-                    <button class="btn fs-6 px-4 fw-bold btn-dark border rounded-0">BUY NOW</button>
-                </div>
-                <div class="col-12 col-md-4 p-3 mx-auto text-light">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <button class="btn btn-sm btn-danger rounded-lg">Exclusive</button>
-                    </div>
-                    <h5 class="text-light fw-bold my-3">
-                        JORDAN
-                        <br>
-                        <span class="fw-normal">JUMPMAN 2021 PF</span>
-                    </h5>
-                    <h5 class="fw-bold">INPIRATION</h5>
-                    <small class="text-light">
-                        Inspired by the design of the latest Air Jordan game shoe,
-                        <br>
-                        the Jordan Jumpman 2021 helps up-and-coming players level up their game.
-                    </small>
-                </div>
-            </section>
+            </div>
+            <div class="social_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="button">
+                <a href="#">SHOP NOW</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </body>
-</html>
+
+    </section>
+
+    <div class="products" id="Products">
+        <h1>Recommended</h1>
+
+        <div class="box">
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>Nike</h2>
+                    <p>
+                        
+                    </p>
+                    <h3> ₱9,999.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="C:\Users\ACER\OneDrive\Desktop\SHOEMATES\index.html\cart.html\cart.html" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱2,500.00</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱4,175.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱5,120.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱6,9990.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                       
+                    </p>
+                    <h3> ₱3,220.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱2,999.00</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱10,599.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="products" id="Products">
+        <h1>All Products</h1>
+
+        <div class="box">
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>Nike</h2>
+                    <p>
+                        
+                    </p>
+                    <h3> ₱9,999.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="C:\Users\ACER\OneDrive\Desktop\SHOEMATES\index.html\cart.html\cart.html" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱2,500.00</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱4,175.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱5,120.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱6,9990.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                       
+                    </p>
+                    <h3> ₱3,220.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="nike.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱2,999.00</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="gumgum.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        
+                    </p>
+                    <h3>₱10,599.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+        
+
+ 
+
+    </div>
+
+    <div class="services" id="Servises">
+        <h1>our<span>services</span></h1>
+
+        <div class="services_cards">
+            <div class="services_box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>
+            Stepping into confidence with every stride.
+                </p>
+            </div>
+
+            <div class="services_box">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>1 Month Replacement</h3>
+                <p>
+                  A one-month replacement policy
+                </p>
+            </div>
+
+            <div class="services_box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Service & Support</h3>
+                <p>
+                  The foundation of a seamless experience
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>ShoeMate@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+1-2345-6789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>123 Ave, Sariaya, Philippines</a>
+            </div>
+
+            <div class="tag">
+                <h1>Get Help</h1>
+                <a href="#" class="center">Payment Options</a>
+                <a href="#" class="center">Order Us</a>
+                <a href="#" class="center">Delivery</a>
+                <a href="#" class="center">Refunds</a>
+            </div>
+
+            <div class="tag">
+                <h1>Our Stores</h1>
+                <a href="#" class="center">Philippines</a>
+                <a href="#" class="center">USA</a>
+            </div>
+
+            <div class="tag">
+                <h1>Follw Us</h1>
+                <div class="social_link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="You email id here">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html> 
